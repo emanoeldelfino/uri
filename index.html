@@ -9,11 +9,17 @@
 </head>
 <body>
   <main>
-    <form action="">
-      <textarea name="text" id="text" cols="40" rows="10" placeholder="Text"></textarea>
-      <input type="submit" value="Convert">
+    <form>
+      <div class="text-input">
+        <label for="text">Text: </label>
+        <textarea name="text" id="text" cols="40" rows="10" class="text-box"></textarea>
+      </div>
+      <input type="submit" value="Convert" class="convert-btn">
     </form>
-    <textarea name="result" id="result" cols="40" rows="10"></textarea>
+    <div class="result">
+      <span>URI Encoded: </span>
+      <textarea name="result" id="result" cols="40" rows="10" class="result-box"></textarea>
+    </div>
   </main>
   <script src="./app.js"></script>
 </body>
